@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+
+  server:
+    build: task_3_4/
+    command: python ./echo_server.py
+    ports:
+      - "8686:8686"
+    container_name: echo_server
